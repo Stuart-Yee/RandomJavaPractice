@@ -1,6 +1,7 @@
 package HalloWelt;
 
 import java.util.Scanner;
+import HalloWelt.Data;
 
 public class HalloWelt {
 
@@ -19,6 +20,12 @@ public class HalloWelt {
 		} else {
 			System.out.printf("Nice to meet you, %s. Try learning German sometime.%n", name);
 		}
+		
+		String[] obst = {"banana", "orange", "apples"};
+		String[] desc = {"favorite", "nutritious", "red"};
+		
+		Data mySet = new Data(desc, obst);
+		mySet.printValues();
 
 	}
 
